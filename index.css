@@ -1,0 +1,88 @@
+body{
+	background-color: #A9A9A9;
+}
+.main{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card{
+	width:25%;
+	background-color: #708090;
+	text-align: center;
+	height: 50%;
+	border-radius: 15px;
+	box-shadow: 4px 4px 5px 5px black;
+}
+.card>.cardchild1>img{
+	width:50%;
+	margin-top: 10px;
+	border-radius: 15px;
+}
+.data{
+	background-color: #708090;
+	width: 70%;
+	/*margin-top: 3%;*/
+	border-radius: 15px;
+	/*margin-right: 5px;*/
+}
+table,th,td{
+	border:1px solid black;
+	text-align: center;
+}
+@media (min-device-width: 320px) and (max-device-width: 424px){
+    .card,
+    .data{
+        width: 100%;
+    }
+    .card{
+        display: flex;
+    }
+    .cardchild1,
+    .cardchild2{
+        width: 50%;
+    }
+    .data{
+    	 background-color: #F08080;
+    }
+}
+@media (min-device-width: 781px) and (max-device-width: 1000px) {
+		.main{
+			flex-direction: row-reverse;
+		}
+
+}
+@media (max-device-width: 480px){
+	 .card,
+    .data{
+        width: 100%;
+    }
+    .card{
+        display: flex;
+    }
+    .cardchild1,
+    .cardchild2{
+        width: 50%;
+    }
+    .data{
+    	 background-color: #696969;
+    }
+}
+@media (min-device-width: 480px) and (max-device-width: 780px) {
+		.card,
+    .data{
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction:column;
+    }
+    .cardchild1{
+		width:100%;
+    }
+    .cardchild2{
+		width:100%;
+    }
+    
+ }
